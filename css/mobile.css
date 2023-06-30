@@ -1,0 +1,93 @@
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 1.2rem;
+    line-height: 1.5;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  /* XÂY DỰNG PHẦN ẢNH BANNER */
+  .banner-container {
+    height: 100vh;
+  }
+
+  .banner-text {
+    width: 100%;
+    top: 40%;
+  }
+
+  .banner-text h1 {
+    margin-bottom: 1rem;
+    font-size: 3.5rem;
+  }
+
+  .banner-text span {
+    font-size: 1.5rem;
+  }
+
+  /* XÂY DỰNG NAVBAR */
+  .nav-container {
+    margin: 0;
+    padding: 30px 40px 10px 40px;
+    display: block !important;
+  }
+
+  .nav-container a {
+    margin-bottom: 20px;
+    padding: 0;
+    border: none;
+    display: block;
+    text-align: start;
+  }
+
+  /* XÂY DỰNG THÔNG TIN CÁ NHÂN */
+  #target {
+    padding: 50px 15px;
+  }
+
+  #personal-info {
+    padding: 50px 15px;
+  }
+
+  /* XÂY DỰNG PHẦN THÔNG TIN NGHỀ NGHIỆP */
+  .job-info-container {
+    padding: 30px;
+  }
+
+  /* XÂY DỰNG PHẦN SỞ THÍCH */
+
+  /* XÂY DỰNG PHẦN "NGÔN NGỮ", "KỸ NĂNG" */
+
+  /* XÂY DỰNG PHẦN CHỨNG CHỈ - GIẢI THƯỞNG */
+  .certificate-container {
+    padding: 50px 20px;
+  }
+
+  .certificate-detail .border-right {
+    border-right: none;
+  }
+
+  /* XÂY DỰNG PHẦN DỰ ÁN */
+  #project .section-title {
+    margin-left: 0;
+  }
+
+  .project-card {
+    margin-bottom: 40px;
+  }
+
+  .project-work {
+    flex-direction: column;
+  }
+
+  .project-position {
+    margin-top: 15px;
+  }
+
+  /* XÂY DỰNG PHẦN LIÊN HỆ */
+  #footer span {
+    display: none;
+  }
+}

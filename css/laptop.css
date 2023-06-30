@@ -1,0 +1,336 @@
+/*
+MAIN COLOR: #339af0;
+GREY COLOR: #868e96;
+BORDER COLOR: #eeeeee;
+*/
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.4rem;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+i {
+  color: #339af0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 1.5em;
+  font-weight: 300;
+}
+
+p {
+  margin: 0 !important;
+  color: #868e96;
+}
+
+ul li {
+  padding: 0;
+  list-style: none;
+}
+
+.bg-grey {
+  background: #f7f7f7;
+}
+
+/* XÂY DỰNG PHẦN ẢNH BANNER */
+.banner-container {
+  width: 100%;
+  height: 70vh;
+  background-image: linear-gradient(
+      rgba(34, 34, 34, 0.6),
+      rgba(34, 34, 34, 0.6)
+    ),
+    url(../images/banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  position: relative;
+  text-align: center;
+}
+
+.banner-text {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.banner-text h1 {
+  font-size: 40px;
+  margin-bottom: 0;
+}
+
+.banner-text span {
+  font-family: "open_sanslight";
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* XÂY DỰNG NAVBAR */
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.nav-container a {
+  padding: 20px;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+}
+
+/* (NÂNG CAO) BỔ SUNG ẢNH CÁ NHÂN */
+.nav-container .nav-profile {
+  width: 20%;
+}
+
+.avatar {
+  width: 180px;
+  height: 180px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.07);
+  z-index: 1;
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+/* XÂY DỰNG THÔNG TIN CÁ NHÂN */
+#about .section-title {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#target {
+  padding: 50px 40px;
+  background-color: #f7f7f7;
+}
+
+#personal-info {
+  padding: 50px 40px;
+  background-color: #eeeeee;
+}
+
+#personal-info ul {
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+#personal-info ul li {
+  margin-bottom: 5px;
+  color: #868e96;
+}
+
+#personal-info ul li span {
+  color: #000;
+}
+
+.personal-info-icon {
+  margin-right: 10px;
+}
+
+/* XÂY DỰNG PHẦN THÔNG TIN NGHỀ NGHIỆP */
+.card-container {
+  padding: 60px 30px;
+  border: 1px solid #eeeeee;
+}
+
+.card-title {
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-title i {
+  margin-right: 10px;
+  color: #adb5bd;
+  font-size: 50px;
+}
+
+.card-detail ul,
+li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 50px;
+}
+
+.card-detail li::before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #339af0;
+  position: absolute;
+  top: 5px;
+  left: -30px;
+}
+
+.list-time {
+  margin-bottom: 10px !important;
+  font-style: italic;
+  font-size: 14px;
+}
+
+.list-time span {
+  padding: 2px 14px;
+  border-radius: 8px;
+  color: #fff;
+  background-color: #339af0;
+}
+
+/* XÂY DỰNG PHẦN SỞ THÍCH */
+.card-detail .interest {
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.card-detail .interest .icon {
+  margin: auto;
+  margin-bottom: 10px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #339af0;
+  border-radius: 50%;
+  font-size: 24px;
+}
+
+/* XÂY DỰNG PHẦN "NGÔN NGỮ", "KỸ NĂNG" */
+.card-detail .level-line {
+  height: 2px;
+  width: 45px;
+  margin: 10px 10px 30px 0;
+  background-color: #eeeeee;
+  display: inline-block;
+}
+
+.card-detail .personal-level {
+  background-color: #339af0;
+}
+
+/* XÂY DỰNG PHẦN CHỨNG CHỈ - GIẢI THƯỞNG */
+.certificate-container {
+  padding: 50px 140px;
+}
+
+.certificate-container .section-title {
+  margin-bottom: 50px;
+}
+
+.certificate-detail {
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #d6c08d;
+}
+
+.certificate-detail .border-right {
+  border-right: 1px solid #d6c08d;
+}
+
+.certificate-image {
+  width: 100%;
+  height: auto;
+}
+
+/* XÂY DỰNG PHẦN DỰ ÁN */
+#project .section-title {
+  margin-bottom: 40px;
+  margin-left: 130px;
+}
+
+.project-card {
+  border: 1px solid #eeeeee;
+}
+
+.project-card img {
+  width: 100%;
+}
+
+.project-title {
+  padding: 20px;
+  text-transform: uppercase;
+}
+
+.project-work {
+  padding: 10px 20px;
+  display: flex;
+  align-items: start;
+  border-top: 1px solid #adb5bd;
+}
+
+.project-time {
+  padding: 3px 15px;
+  display: inline-block;
+  border-radius: 20px;
+  background-color: #339af0;
+  color: #fff;
+}
+
+.project-group {
+  color: #868e96;
+  display: flex;
+  align-items: center;
+}
+
+.project-group i {
+  color: #868e96;
+  margin: auto 10px;
+  font-size: 20px;
+}
+
+table td {
+  padding: 5px;
+  color: #868e96;
+  border-top: 1px solid #adb5bd;
+  border-collapse: collapse;
+}
+
+/* XÂY DỰNG PHẦN LIÊN HỆ */
+#footer ul {
+  margin: 0;
+  padding: 0;
+}
+
+#footer ul li {
+  display: inline-block;
+  margin: auto 15px;
+}
+
+#footer i {
+  font-size: 6vh;
+}
+
+#footer a {
+  display: flex;
+  align-items: center;
+  color: #868e96;
+}
